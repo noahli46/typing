@@ -18,24 +18,19 @@ export default {
   data () {
     return {
       input: "",
-      text: `Housework could be everyone’s work, not just “women’s work”.
-       Why do women enable men to act oblivious to cleaning, grocery shopping, pet feeding, etc? 
-       Somehow when men live alone they figure out how to do all of those things all on their own. 
-       My friend’s husband claimed he didn’t know that sheets should be washed more than once a season.
-        He said he didn’t know one had to clean toilets. He assumed that since you flush toilets they clean themselves.
-         She tried to get him to help but he did an awful job so she let him off the hook.
-          Wouldn’t it be better if she spent the time and energy to get him to do it right instead of letting him claim he is “just bad at it”.
-           My sons were raised to clean toilets and change their own sheets. Hopefully, in their future homes, the housework will be equally divided.`
+      text: `It was going to rain. The weather forecast didn't say that, but the steel plate in his hip did. He had learned over the years to trust his hip over the weatherman. It was going to rain, so he better get outside and prepare.`
     }
   },
   methods: {
     test () {
       let inputArray = this.input.split('')
       let textArray = this.text.split('')
-      
-      for (let i = 0; i < inputArray.length; i++) {
-        if (inputArray[i] === textArray[i]){
-          console.log(i,"yep")
+      for (let i = 0; i < textArray.length; i++) {
+        if (inputArray[textArray.length - i] === textArray[textArray.length - i]){
+          let woo = "woo"
+          woo + "sdf"
+        }else {
+          console.log("incorrect", textArray.length - i)
         }
       }
       // console.log(textArray)
